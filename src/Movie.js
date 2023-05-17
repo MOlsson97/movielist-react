@@ -10,7 +10,7 @@ export default function Movie(props) {
             <div>
             { title }
         <div className="rating" style={{float: "right"}}>
-            {Array.from({ length: rating }).map((_, index) => (
+            {Array.from({ length: rating }).map((index) => (
                 <img key={index} src={starImage} alt="Star" style={{ width: "20px", height: "20px"}} />
             ))}
         </div>
